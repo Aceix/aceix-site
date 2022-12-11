@@ -1,3 +1,23 @@
+<script setup lang="ts">
+import { computed } from "vue";
+import type { Quote } from "../models";
+
+const quotes: Quote[] = [
+  {
+    msg: "That's for all the kids out there who dream the impossible. You can can do it too man! I believe in you guys!",
+    author: "Lewis Hamilton",
+  },
+  {
+    msg: "The quieter you become, the more you are able to hear",
+    author: "Rumi",
+  },
+];
+
+const randomQuote = computed(
+  () => quotes[Math.floor(Math.random() * quotes.length)]
+);
+</script>
+
 <template>
   <div class="HomePage">
     <main class="about">
@@ -36,9 +56,8 @@
       </div>
 
       <blockquote class="quotes">
-        That&apos;s for all the kids out there who dream the impossible. You can
-        do it too man! I believe in you guys!
-        <cite>Lewis Hamilton</cite>
+        {{ randomQuote.msg }}
+        <cite>{{ randomQuote.author }}</cite>
       </blockquote>
     </main>
 

@@ -55,6 +55,8 @@
   width: 100%;
   height: 100%;
   padding: 30px 20px;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 .about {
@@ -64,8 +66,8 @@
 
   .profile-pic {
     width: 200px;
-    // height: 400px;
     border-radius: 8px;
+    box-shadow: 2px 2px 16px black;
   }
 
   .name {
@@ -80,13 +82,7 @@
     font-style: italic;
   }
 
-  .summary {
-    // margin-top: 0px;
-    // margin-bottom: 4px;
-  }
-
   .connect {
-    // margin-top: 4rem;
     margin-top: auto;
     margin-bottom: 4px;
   }
@@ -120,10 +116,8 @@
   }
 
   .quotes {
-    // position: absolute;
-    // position: relative;
-    // left: 0px;
-    // bottom: 1rem;
+    margin: 0px;
+    width: 80vw;
 
     & > cite {
       display: block;
@@ -139,6 +133,27 @@
     .projects {
       display: flex;
       list-style: none;
+    }
+  }
+}
+
+// Tablet screens
+@media screen and (min-width: 768px) {
+  .HomePage {
+    flex-flow: row nowrap;
+    font-size: large;
+  }
+
+  .about {
+    align-self: flex-end;
+    justify-content: flex-end;
+
+    .profile-pic {
+      width: 400px;
+    }
+
+    .connect {
+      margin-top: 4rem;
     }
   }
 }

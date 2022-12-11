@@ -2,7 +2,7 @@
 
 <template>
   <div class="AppBackground">
-    <img class="background" src="@/assets/sky.jpg" alt="background" />
+    <img class="background" src="@/assets/sky.png" alt="background" />
     <div v-for="i in 100" :key="i" class="circle-container">
       <div class="circle"></div>
     </div>

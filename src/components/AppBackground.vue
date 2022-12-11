@@ -2,11 +2,7 @@
 
 <template>
   <div class="AppBackground">
-    <img
-      class="background"
-      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/221808/sky.jpg"
-      alt="background"
-    />
+    <img class="background" src="@/assets/sky.jpg" alt="background" />
     <div v-for="i in 100" :key="i" class="circle-container">
       <div class="circle"></div>
     </div>

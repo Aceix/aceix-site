@@ -13,18 +13,18 @@
       <p class="connect">Connect with me</p>
       <div class="social-btns">
         <a
-          title="Github"
-          target="_blank"
-          href="https://github.com/Aceix"
-          class="social-btn"
-          ><img src="@/assets/github.svg" alt="github profile"
-        /></a>
-        <a
           title="LinkedIn"
           target="_blank"
           href="https://www.linkedin.com/in/kwesi-frempong-smart-26b7b2127/"
           class="social-btn"
           ><img src="@/assets/linkedin-blue.svg" alt="linkedin profile"
+        /></a>
+        <a
+          title="Github"
+          target="_blank"
+          href="https://github.com/Aceix"
+          class="social-btn"
+          ><img src="@/assets/github.svg" alt="github profile"
         /></a>
         <a
           title="Email"
@@ -65,6 +65,7 @@
   .profile-pic {
     width: 200px;
     // height: 400px;
+    border-radius: 8px;
   }
 
   .name {
@@ -97,16 +98,23 @@
     margin-bottom: 2rem;
 
     .social-btn {
-      border-radius: 50%;
-
       &:any-link {
         color: inherit;
         text-decoration: none;
       }
 
       & > img {
+        padding: 4px;
+        transition: border-width 200ms;
+        border: 2px solid white;
+        border-radius: 50%;
         width: 40px;
         height: 40px;
+
+        &:hover,
+        &:active {
+          border-width: 4px;
+        }
       }
     }
   }

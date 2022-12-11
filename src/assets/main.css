@@ -3,10 +3,13 @@
 html, body {
   margin: 0px;
   padding: 0px;
-  font-family: 'Oxygen', sans-serif;
 }
 
 #app {
   height: 100vh;
   width: 100vw;
+
+  font-family: 'Oxygen', sans-serif;
+  color: white;
+  text-shadow: 2px 2px 8px black;
 }

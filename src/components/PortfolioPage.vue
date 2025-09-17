@@ -408,6 +408,8 @@ section {
 .social-links {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
   gap: 0.5rem;
 }
 
@@ -460,10 +462,6 @@ section {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
-  }
-
-  .social-links {
-    align-items: center;
   }
 }
 

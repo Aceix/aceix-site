@@ -52,7 +52,7 @@ html {
 
 .app {
   width: 100vw;
-  min-height: 100vh;
+  min-height: 100dvh;
   background: #000;
 }
 </style>

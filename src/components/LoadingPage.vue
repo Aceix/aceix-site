@@ -149,9 +149,9 @@ onMounted(() => {
       // Wait a bit before transitioning to main page
       setTimeout(() => {
         emit('loadingComplete')
-      }, 2000)
+      }, 1000)
     }
-  }, 50) // Adjust speed of log display
+  }, 10) // Adjust speed of log display
 })
 </script>
 

@@ -115,12 +115,12 @@ onMounted(() => {
 
 // Portfolio data - customize these with your information
 const name = 'Kwesi Frempong-Smart'
-const bio = `With over 8 years of experience as a versatile full-stack software engineer,
-I have a proven track record of taking ownership and delivering high-impact solutions.
-My career highlights include developing a Java microservice for security settlement transactions at Morgan Stanley,
-leading a frontend team to build a new Web UI at Netmaker, and increasing revenue by over 30% at Clearspace Labs by
-building a critical module for a healthcare platform. I am a professional with expertise across a wide range of
-technologies, including TypeScript, Go, React/Next, Vue/Nuxt and AWS. I have dabbled with small Blockchain, IoT and AI/ML projects.`
+const bio = `With over 8 years of experience as a versatile full-stack senior software engineer,
+I have a proven track record of taking ownership and delivering high-impact solutions as well as mentoring junior engineers.
+My career highlights include developing a Java microservice for security settlement transactions,
+leading a frontend team to design and implement a new, user-centered Web UI, and increasing revenue by over 30% by
+building a critical module for a healthcare platform at various companies. I am a professional with expertise across a wide range of
+technologies, including Go, TypeScript, Java, React/Next, Vue/Nuxt and AWS. I have dabbled with Blockchain, IoT and AI/ML projects.`
 
 const workExperience = ref([
   {
